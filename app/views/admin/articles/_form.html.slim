@@ -1,3 +1,11 @@
+= javascript_include_tag "https://cloud.tinymce.com/5/tinymce.min.js?apiKey=9r34rgbfjm7zeisnh1m647ax6k9xv36r1cadjszz8j7olchz"
+javascript:
+  tinymce.init({ 
+    selector:'#article_body',
+    plugins: "table, image",
+    toolbar: "undo redo | formatselect | bold italic backcolor | table | image"
+  });
+
 = simple_form_for(['admin', @item]) do |f|
   == render 'fae/shared/form_header', header: @klass_name
 
