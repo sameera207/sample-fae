@@ -12,3 +12,35 @@
 
     = fae_image_form f, :hero_image
     = fae_file_form f, :pdf
+
+= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.14.0/plugins/emoji/trumbowyg.emoji.min.js"
+= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.14.0/plugins/emoji/ui/trumbowyg.emoji.min.css"
+
+
+= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.14.0/plugins/emoji/trumbowyg.emoji.min.js"
+= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.14.0/plugins/emoji/ui/trumbowyg.emoji.min.css"
+
+
+= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.14.0/plugins/table/trumbowyg.table.js"
+= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.14.0/plugins/table/ui/trumbowyg.table.min.css"
+
+
+= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.14.0/plugins/fontfamily/trumbowyg.fontfamily.min.js"
+
+
+javascript:
+  $('#article_body').trumbowyg({
+    btns: [
+      ['strong'], 
+      ['insertImage'], 
+      ['emoji'],
+      ['table'],
+      ['fontfamily'],
+    ],
+    plugins: {
+      table: {
+        rows: 1,
+        columns: 1
+      }
+    }
+  });
