@@ -2,8 +2,12 @@
 javascript:
   tinymce.init({ 
     selector:'#article_body',
-    plugins: "table, image",
-    toolbar: "undo redo | formatselect | bold italic backcolor | table | image"
+    plugins: "table, image, media, link imagetools",
+    toolbar: "undo redo | formatselect | bold italic backcolor | table | image | media | link",
+    imagetools_toolbar: "rotateleft rotateright | flipv fliph | editimage imageoptions",
+    automatic_uploads: true,
+    images_upload_url: '/upload',
+    images_reuse_filename: true
   });
 
 = simple_form_for(['admin', @item]) do |f|
