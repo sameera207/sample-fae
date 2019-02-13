@@ -1,24 +1,56 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This code is to test a rich text editor on Fae CMS. There are two branches
 
-Things you may want to cover:
+- tinymice (witht the tinymice integration)
+- trumbowyg (witht the trumbowyg integartion)
 
-* Ruby version
+# Getting the project running
 
-* System dependencies
+- select the branch you want to be in
+- `bundle install` 
+- `rails db:create`
+- `rails db:migrate`
+- Register as a user
+- Go to `Articles` tab
 
-* Configuration
+To view the page
 
-* Database creation
+- go to `http://localhost:3000/pages/index`
 
-* Database initialization
 
-* How to run the test suite
+# With trumbowyg
 
-* Services (job queues, cache servers, search engines, etc.)
+![trumbowyg](https://i.imgur.com/2jgJIhZ.png)
 
-* Deployment instructions
+## Good
 
-* ...
+- easy to integrate
+- image uploaded etc supported by it's core
+- Long list of plugins https://alex-d.github.io/Trumbowyg/documentation/plugins/
+  
+
+## Bad (comparatively)
+
+- tables are not supported, (there is a table plugin, didnt work as per the README, might need some diggging)
+
+
+
+
+_please note the table is added via the tinymce_
+
+
+# With tinymice
+
+![tinymice](https://i.imgur.com/3bIxQF0.png)
+
+## Good
+
+- support tables
+- Well established (over trumbowyg)
+- has lots of plugins  
+
+## Bad (comparatively)
+
+- image/file uploads needs to be implemented seperatly. I've added a image upload plugin, but out of the box it supports image urls only)
+
