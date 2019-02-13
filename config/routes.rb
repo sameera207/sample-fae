@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get 'pages/index'
+  post 'pages/create'
   namespace :admin do
     resources :articles
     resources :article_categories

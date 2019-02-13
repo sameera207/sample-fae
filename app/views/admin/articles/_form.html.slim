@@ -2,11 +2,12 @@
 javascript:
   tinymce.init({ 
     selector:'#article_body',
+    menubar:false,
     plugins: "table, image, media, link imagetools",
     toolbar: "undo redo | formatselect | bold italic backcolor | table | image | media | link",
     imagetools_toolbar: "rotateleft rotateright | flipv fliph | editimage imageoptions",
-    automatic_uploads: true,
-    images_upload_url: '/upload',
+    images_upload_url: '/pages/create',
+    automatic_uploads: false,
     images_reuse_filename: true
   });
 
