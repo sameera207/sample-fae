@@ -54,3 +54,31 @@ _please note the table is added via the tinymce_
 
 - image/file uploads needs to be implemented seperatly. I've added a image upload plugin, but out of the box it supports image urls only)
 
+# Tinymce implemenations for
+
+- video embed
+- links
+- image upload
+
+## video embed
+
+![video embed](https://i.imgur.com/NjbuiRu.gif)
+
+## Adding links
+
+![links](https://i.imgur.com/iAL7tWR.gif)
+
+## Image upload
+
+There is two way of uploading images,
+
+1 - Give the image public url
+2 - Upload a local image and get the public url
+
+Following implemenation uses carrierwave as the local image uploader with Tinymce image upload plugin. 
+
+![links](https://i.imgur.com/dO90hIc.gif)
+
+
+
+

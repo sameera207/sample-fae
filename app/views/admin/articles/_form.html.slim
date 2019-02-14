@@ -1,3 +1,16 @@
+= javascript_include_tag "https://cloud.tinymce.com/5/tinymce.min.js?apiKey=9r34rgbfjm7zeisnh1m647ax6k9xv36r1cadjszz8j7olchz"
+javascript:
+  tinymce.init({ 
+    selector:'#article_body',
+    menubar:false,
+    plugins: "table, image, media, link imagetools",
+    toolbar: "undo redo | formatselect | bold italic backcolor | table | image | media | link",
+    imagetools_toolbar: "rotateleft rotateright | flipv fliph | editimage imageoptions",
+    images_upload_url: '/pages/create',
+    automatic_uploads: false,
+    images_reuse_filename: true
+  });
+
 = simple_form_for(['admin', @item]) do |f|
   == render 'fae/shared/form_header', header: @klass_name
 
